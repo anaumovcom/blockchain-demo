@@ -18,6 +18,10 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: 22
           script: |
+            echo ${{ secrets.SSH_HOST }}
+            export NVM_DIR="~/.nvm"
+            source ~/.nvm/nvm.sh
+            node -v
             cd /DEV/blockchain-demo
             git pull o main
             npm install
