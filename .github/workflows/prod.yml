@@ -21,4 +21,6 @@ jobs:
             cd /DEV/blockchain-demo
             git pull origin main
             npm install
-            npm run dev            
+            npm run build
+            kill -9 $(lsof -t -i:80)
+            npm start -- -p 80 & bg
