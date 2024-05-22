@@ -4,7 +4,6 @@ export default function Home() {
   return (
     <main className="flex w-screen h-screen flex-col p-24">
 
-
       <div className="md:flex">
         <ul className="flex-column space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
           <li>
