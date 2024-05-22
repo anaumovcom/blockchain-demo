@@ -19,6 +19,6 @@ jobs:
           port: 22
           script: |                        
             cd /DEV/blockchain-demo
-            git pull o main
+            git pull origin main
             npm install
             npm run dev            
