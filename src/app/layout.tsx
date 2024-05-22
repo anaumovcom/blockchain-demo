@@ -14,9 +14,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div id="version" className="fixed p-2 text-[14px] z-999999">v.0.0.1</div>
+        {children}
+      </body>
     </html>
   );
 }
